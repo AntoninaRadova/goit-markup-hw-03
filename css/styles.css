@@ -107,12 +107,16 @@ ul {
     align-items: center;
 
     margin-left: auto;
-    padding-top: 32px;
-    padding-bottom: 32px;
 }
 
 .auth-nav .item+.item {
     margin-left: 50px;
+}
+
+.auth-nav > .list {
+    padding-top: 32px;
+    padding-bottom: 32px;
+
 }
 
 .list .link {
@@ -178,14 +182,12 @@ ul {
 }
 
 .hero-button {
-    display: flex;
-    align-items: center;
     text-align: center;
     text-decoration: none;
-    min-width: 152px;
+    /* min-width: 152px; */
     padding: 10px 32px;
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
 
     color: var(--color-text-secondary);
     font-family: 'Roboto', sans-serif;
@@ -207,7 +209,7 @@ ul {
 .activity {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -30px;
+    gap: 30px;
 }
 
 .activity-item {
@@ -223,6 +225,10 @@ ul {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--color-text-primary);
+}
+
+.activity-title-nomarginr {
+    margin-right: 0;
 }
 
 .activity-text {
@@ -264,7 +270,6 @@ ul {
 }
 
 .team {
-    padding-top: 30px;
     margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
@@ -272,6 +277,12 @@ ul {
     letter-spacing: 0.03em;
     color: var(--color-text-primary);
 }
+
+.team-p {
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
 
 /* portfolio-button */
 
@@ -324,6 +335,10 @@ ul {
     color: var(--color-text-primary);
 }
 
+.portfolio-list:last-child {
+    margin-right: 0;
+}
+
 .portfolio-button:hover,
 .portfolio-button:focus {
     color: var(--color-text-secondary);
@@ -333,9 +348,6 @@ ul {
 /* portfolio about */
 
 .portfolio-item {
-    width: 370px;
-    margin-right: 30px;
-    margin-bottom: 30px;
     flex-basis: calc(100% / 3 - 30px);
 }
 
@@ -379,15 +391,12 @@ ul {
     background: var(--footer-color);
 }
 
-.footer-list a {
-    margin-top: 0;
+.footer-list {
+    margin-top: 9px;
 }
 
-.footer-list {
-    display: flex;
-    flex-direction: column;
-
-    margin-top: 9px;
+.footer-list-a {
+    margin-top: 0;
 }
 
 .addrses {
@@ -423,4 +432,15 @@ ul {
     letter-spacing: 0.03em;
     color: var(--webstudio-color);
     text-decoration: none;
+}
+
+/* Img Overlay */
+
+.overlay {
+    height: 600px;
+    max-width: 1600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: linear-gradient(), url(../images/Img-Overlay.jpg);
 }
