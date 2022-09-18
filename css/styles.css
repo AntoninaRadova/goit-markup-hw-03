@@ -276,7 +276,7 @@ ul {
 }
 
 
-/* portfolio-button */
+/* portfolio-*/
 
 .portfolio-button {
     justify-content: center;
@@ -315,7 +315,6 @@ ul {
 .button {
     padding: 6px 22px;
     text-align: center;
-    margin-right: 8px;
     
     cursor: pointer;
     text-decoration: none;
